@@ -1,11 +1,16 @@
+<div align="center">
+
+<img src="https://grow.empress.eco/uploads/default/original/2X/1/1f1e1044d3864269d2a613577edb9763890422ab.png" alt="Logo" width="80" height="80">
+
 # Empress Mobile Accounting: Your Pocket-Sized Finance Powerhouse
-![Empress Mobile Accounting Logo](https://grow.empress.eco/uploads/default/original/2X/1/1f1e1044d3864269d2a613577edb9763890422ab.png
 
 Empress Mobile Accounting is here to transform and simplify your financial management. Tailored for small business owners, freelancers, and anyone who requires an efficient, user-friendly accounting solution, it is your ultimate tool for accounting on the go.
 
-- [Explore the Docs](https://empress.eco/)
-- [Report a Bug](https://github.com/empress-eco/mobile_accounting/issues)
-- [Request a Feature](https://github.com/empress-eco/mobile_accounting/issues)
+[Explore the Docs](https://empress.eco/) | [Report a Bug](https://github.com/empress-eco/mobile_accounting/issues) | [Request a Feature](https://github.com/empress-eco/mobile_accounting/issues)
+
+</div>
+
+
 
 ## About The Project
 
