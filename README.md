@@ -1,77 +1,66 @@
-# Mobile Accounting
+# Empress Mobile Accounting: Your Pocket-Sized Finance Powerhouse
+![Empress Mobile Accounting Logo](https://grow.empress.eco/uploads/default/original/2X/1/1f1e1044d3864269d2a613577edb9763890422ab.png
 
-### Getting Started
+Empress Mobile Accounting is here to transform and simplify your financial management. Tailored for small business owners, freelancers, and anyone who requires an efficient, user-friendly accounting solution, it is your ultimate tool for accounting on the go.
 
-#### Step 0
+- [Explore the Docs](https://empress.eco/)
+- [Report a Bug](https://github.com/empress-eco/mobile_accounting/issues)
+- [Request a Feature](https://github.com/empress-eco/mobile_accounting/issues)
 
-Make sure you have frappejs-Accounting setup up and running. If not, follow the guide [here](https://github.com/frappe/frappejs-accounting)
+## About The Project
 
+Mobile Accounting, powered by Empress, is designed to streamline the complex world of financial management. It offers an intuitive mobile interface with easy navigation, making accounting tasks less daunting and more efficient.
 
-#### Step 1
+Key Features:
+- Streamlined accounting experience on mobile devices
+- User-friendly interface for easy navigation
+- Seamless integration with Empressjs-Accounting on the backend
 
-Clone this repo
+## Technical Stack and Setup Instructions
+
+Before getting started, ensure you have `Empressjs-Accounting` set up and running. If not, follow the [guide to set up Empressjs-Accounting](https://github.com/Empress/Empressjs-accounting).
+
+### Installation
+1. Clone this repository:
 ```bash
-git clone https://github.com/frappe/mobile-accounting
+git clone https://github.com/empress-eco/mobile_accounting.git
 ```
-
-#### Step 2
-
-Install dependencies
+2. Navigate into the cloned repository and install dependencies:
 ```bash
-
-cd mobile-accounting
-
+cd mobile_accounting
 yarn
 ```
-
-#### Step 3
-
-I assume most of us might be having Android devices, so to run it on android - connect the phone to your PC/Laptop.
-Make sure you have USB debugging enabled in your device and ADB drivers installed in your PC/Laptop.
+3. Connect your Android device to your PC/Laptop with USB debugging enabled on your device and ADB drivers installed on your PC/Laptop. Run the application using the following commands:
 ```bash
-
-# Run this command
 ionic cordova run android
-
-# In order to live update code and check it instantly on your device, use
-ionic cordova run android --livereload --consoleogs
-
-# If you run into error of universalify package, run the following command and try the above command again
+```
+For live updates and instant checks on your device, use:
+```bash
+ionic cordova run android --livereload --consolelogs
+```
+If you encounter errors related to the `universalify` package, run the command below and try again:
+```bash
 yarn add universalify
 ```
 
-#### Optionally
+### Usage
 
-You can also run it in your web browser using.
-```bash
-ionic serve
-```
-This will cause a CORS issue in the web browser.
-In order to tackle that, goto
-```bash
+You can run Mobile Accounting in your web browser using the command `ionic serve`. For more details and usage examples, refer to our [documentation](https://empress.eco/).
 
-frappejs-Accounting > packages > frappejs > server > index.js
+## Contribution Guidelines
 
-# add this line below the require morgan expression
-app.use(cors());
-```
+Contributions are warmly welcomed and highly appreciated. Here's how you can contribute:
 
-#### Note
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-There is also a minor change needed in the Accounting package in order to make the login work.
-```bash
+We look forward to your valuable contributions!
 
-# goto
-frappejs-Accounting > packages > accounting > server > index.js
+## License and Acknowledgements
 
-# add this line inside `await server.start`
-authConfig: {}
-```
+This project is licensed under the MIT License. All your contributions to the project will also be licensed under the MIT License.
 
-### What's Important
-
-If you look in the repo, you'll find a `frappe.js` file which is the most crucial one. Its responsible for establishing the connection with the frappejs backend. HTTPClient backend has been used for this app.
-
-All that needs to be done is init this connection by providing it a server on app start. It also assigns itself to the window object, so that it can be used seamlessly across any pages that we create.
-
-For reference checkout - [ToDo app](https://github.com/Zlash65/ToDo)
+We would like to express our profound gratitude to the Empress Community, the driving force behind the essential tools that power this project. Their innovation and dedication have been instrumental in building the foundations and functionalities we rely on. We are deeply grateful for their pioneering work and ongoing support.
